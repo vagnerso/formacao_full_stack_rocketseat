@@ -1,13 +1,8 @@
-// while
+// continue encerra (pula) a execução de instruções na iteração atual e continua a execução do loop com a próxima iteração
 
-let execute = true
-
-while (execute) {
-    let response = window.prompt("Deseja continuar: 1 (SIM) ou 2 (NÃO)")
-    
-    if (response === "2") {
-        execute = false
+for (let i = 0; i < 10; i++) {
+    if (i === 5) {
+        continue
     }
+    console.log(i)
 }
-
-console.log("Segue o fluxo...")
