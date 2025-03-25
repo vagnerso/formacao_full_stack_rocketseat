@@ -1,17 +1,21 @@
-// criar erros personalizados
+// desestruturar objetos
 
-class MyCustomError {
-    constructor(message){
-        this.message = "Classe de erro customizada: " + message
-    }
+const product = {
+    description: "Teclado",
+    price: 150
 }
 
-    try {
-        throw new MyCustomError("Erro personalizado lançado!")
-    } catch (error) {
-        if (error instanceof MyCustomError){
-            console.log(error.message)
-        }else{
-        console.log(error.message)
-    }
+const { description, price } = product
+console.log("Descrição: ", description) 
+console.log("Preço: ", price)
+
+function newProduct({description, price}) {
+    console.log("--- Novo Produto ---")
+    console.log("Descrição: ", description)
+    console.log("Preço: ", price)
 }
+
+newProduct({
+    price: 70,
+    description: "Mouse",
+})
