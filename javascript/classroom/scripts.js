@@ -1,21 +1,25 @@
-// desestruturar objetos
+// spread (espalhar)
 
-const product = {
-    description: "Teclado",
-    price: 150
-}
+const numbers = [1, 2, 3]
+console.log(numbers)
 
-const { description, price } = product
-console.log("Descrição: ", description) 
-console.log("Preço: ", price)
+// spread
+console.log(...numbers)
 
-function newProduct({description, price}) {
-    console.log("--- Novo Produto ---")
-    console.log("Descrição: ", description)
-    console.log("Preço: ", price)
-}
+const data = [
+    {
+        name: "Vagner",
+        email: "vagner@mail",
+        avatar: "vagner.png",
+    },
+    {
+        name: "Ana",
+        email: "ana@mail",
+        avatar: "ana.png",
+    },
+]
 
-newProduct({
-    price: 70,
-    description: "Mouse",
-})
+console.log(data)
+
+// utilizando o spread no array com objetos
+console.log(...data)
