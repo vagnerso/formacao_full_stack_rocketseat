@@ -34,7 +34,9 @@ async function fetch(){
         console.log("Erro: ", error)         
     } finally {
         console.log("Fim da execução!")
-    } 
+    }
+    
 }
+
 
 fetch()
