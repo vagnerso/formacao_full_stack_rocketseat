@@ -1,0 +1,34 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Mouse",
+      "price": 150.25
+    },
+    {
+      "id": "2",
+      "name": "Teclado",
+      "price": 90
+    },
+    {
+      "id": "3",
+      "name": "Monitor",
+      "price": 500
+    },
+    {
+      "id": "4",
+      "name": "Monitor Gamer",
+      "price": 1000
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "Vagner Oliveira"
+    },
+    {
+      "id": "2",
+      "name": "Ana Claudia"
+    }
+  ]
+}
