@@ -1,7 +1,11 @@
 import dayjs from "dayjs"
 import { openingHours } from "../../utils/opening-hours.js"
+import { hoursClick } from "./hours-click.js"
 
 export function hoursLoad({ date }){
+    // limpa lista de horarios
+    hours.innerHTML = ""
+
     const opening = openingHours.map((hour) => {
         // Recupera somente a hora
         const [scheduleHour] = hour.split(":")
@@ -35,6 +39,9 @@ export function hoursLoad({ date }){
         }
         hours.append(li)
     })
+
+    // adiciona evento de click nos horários
+    hoursClick()
 }
 
 function hourHeaderAdd(title){
